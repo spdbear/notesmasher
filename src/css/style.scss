@@ -1,0 +1,53 @@
+@import 'node_modules/reset.css/reset';
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #eee;
+}
+
+.body {
+  position: relative;
+}
+.contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+}
+
+.canvas {
+  height: 100%;
+  width: 100%;
+}
+
+.capture {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  padding: 2px 12px;
+  text-align: right;
+  line-height: 38px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #888;
+  cursor: pointer;
+  &:hover {
+    background-color: #ddd;
+  }
+}
