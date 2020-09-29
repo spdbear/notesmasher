@@ -5,12 +5,12 @@ import * as util from './util'
 
 const canvas: HTMLCanvasElement = document.querySelector('.canvas')
 const ctx = canvas.getContext('2d')
-const CANVAS_W = 800
-const CANVAS_H = 400
+const CANVAS_W = 768
+const CANVAS_H = 432
 canvas.width = CANVAS_W
 canvas.height = CANVAS_H
 const LANE_W = 420
-const NOTE_H = 50
+const NOTE_H = 52
 const NOTE_PADDING_X = 10
 
 const setting: settingType = {
@@ -179,13 +179,13 @@ const drawConstant = () => {
       ctx.fillText(
         setting.LANE_NUM >= 7 ? '_' : 'SPACE',
         i * noteWidth + xAdjust + noteWidth / 2,
-        CANVAS_H - 30
+        CANVAS_H - 31
       )
     } else {
       ctx.fillText(
         `${gameObject.keyArray[i].toUpperCase()}`,
         i * noteWidth + xAdjust + noteWidth / 2,
-        CANVAS_H - 30
+        CANVAS_H - 31
       )
     }
     ctx.beginPath()
